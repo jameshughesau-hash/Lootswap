@@ -80,5 +80,18 @@ document.getElementById('listingForm').addEventListener('submit',e=>{
 document.getElementById('closeDialog').addEventListener('click',()=>document.getElementById('contactDialog').close());
 render();
 </script>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+<script>
+  const SUPABASE_URL = "PASTE_YOUR_PROJECT_URL_HERE";
+  const SUPABASE_KEY = "PASTE_YOUR_PUBLISHABLE_KEY_HERE";
+
+  const supabaseClient = window.supabase.createClient(
+    SUPABASE_URL,
+    SUPABASE_KEY
+  );
+</script>
+
 </body>
 </html>
